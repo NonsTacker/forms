@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+form {
+    border-style: dashed;
+    border-width: 0px;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+label {
+    border-style: dashed;
+    border-width: 0px;
+    border-color: green;
+    margin: 2px;
+    flex: 0.3
+}
+
+input {
+    border-style: dashed;
+    border-width: 0px;
+    border-color: blue;
+    margin: 2px;
+    flex: 0.7;
+    max-width: 100px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bordered, .bordered input, .bordered label {
+    border-width: 1px;
+    padding: 2px
+}
+
+.unbordered, .unbordered input, .unbordered label {
+    border-width: 0px;
+    padding: 3px;
+}
