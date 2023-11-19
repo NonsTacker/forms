@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit(zooForm)" #zooForm="ngForm">
+<form (ngSubmit)="onSubmit()" #zooForm="ngForm">
   <label for="animal">Cat, Mouse, or Bunny? </label>
   <input type="text" id="animal" name="animal" placeholder="Enter animal..." [(ngModel)]="animal">
 
@@ -6,7 +6,7 @@
   <input type="number" id="count" name="count" placeholder="Enter count..." [(ngModel)]="count">
 
   <section class="centered">
-    <button type="submit" (click)="onSubmit(zooForm)" mat-raised-button color="primary">Submit Form</button>
+    <button type="submit" (click)="onSubmit()" mat-raised-button color="primary">Submit Form</button>
   </section>
 
   <section class="centered" *ngIf="submitted">
